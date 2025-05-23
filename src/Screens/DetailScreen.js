@@ -1,4 +1,4 @@
-import { Button, Dimensions, Text, View } from "react-native";
+import { Button, Dimensions,StyleSheet, Text, View } from "react-native";
 
 const windowWidth = Dimensions.get("window").width;
 
@@ -26,16 +26,26 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#faf0e6",
+        backgroundColor: "#f9f9f9", // Fundo claro e moderno
+        padding: 20,
     },
     title: {
-        fontSize: 24,
-        marginBottom: 20,
+        fontSize: 30,
+        fontWeight: "bold",
+        color: "#4A4A4A", // Cor neutra e elegante
+        marginBottom: 40,
+        textAlign: "center",
     },
     buttonContainer: {
-        backgroundColor: '#ffebcd',
         margin: 10,
-        width: windowWidth * 0.5,
-        borderRadius: 5,
+        width: windowWidth * 0.7, // Botões mais largos
+        borderRadius: 12,
+        overflow: "hidden",
+        elevation: 5, // Sombra para Android
+        shadowColor: "#000", // Sombra para iOS
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+        backgroundColor: "#ffffff", // Fundo branco para destacar os botões
     },
 });

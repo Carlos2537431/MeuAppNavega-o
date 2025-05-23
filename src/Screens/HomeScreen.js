@@ -28,16 +28,26 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#f0f8ff",
+        backgroundColor: "#f0f8ff", // Fundo azul claro
+        padding: 20,
     },
     title: {
-        fontSize: 24,
-        marginBottom: 20,
+        fontSize: 28,
+        fontWeight: "bold",
+        color: "#0DA9CA", // Titulo Azul claro
+        marginBottom: 30,
+        textAlign: "center",
     },
     buttonContainer: {
-        backgroundColor: 'add8e6',
         margin: 10,
-        width: windowWidth * 0.5,
-        borderRadius: 5,
+        width: windowWidth * 0.6,
+        borderRadius: 15,
+        overflow: "hidden",
+        elevation: 4,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.5,
+        backgroundColor: "#87CEEB", // Azul claro para os botões
     },
 });
